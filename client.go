@@ -256,7 +256,7 @@ func (c *Client) Close() error {
 	_, err := c.Exec("quit")
 	err2 := c.conn.Close()
 
-	if err != nil {
+	if err != nil && err != ErrNotConnected {
 		return err
 	}
 
