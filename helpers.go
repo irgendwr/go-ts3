@@ -108,7 +108,7 @@ func decodeMap(d map[string]interface{}, r interface{}) error {
 		WeaklyTypedInput: true,
 		TagName:          "ms",
 		Result:           r,
-		DecodeHook:       mapstructure.ComposeDecodeHookFunc(
+		DecodeHook: mapstructure.ComposeDecodeHookFunc(
 			sliceHookFunc,
 			timeHookFunc,
 		),
@@ -148,11 +148,10 @@ func decodeSlice(elemType reflect.Type, slice reflect.Value, input map[string]in
 // sliceHookFunc supports int/string decoding to slice
 func sliceHookFunc(from reflect.Kind, to reflect.Kind, data interface{}) (interface{}, error) {
 	if to == reflect.Slice {
-		if from == reflect.String {
+		switch from {
+		case reflect.String:
 			return strings.Split(data.(string), ","), nil
-		}
-
-		if from == reflect.Int {
+		case reflect.Int:
 			return []int{data.(int)}, nil
 		}
 	}
