@@ -274,16 +274,16 @@ func (s *ServerMethods) Stop(id int) error {
 
 // Group represents a virtual server group.
 type Group struct {
-	ID                int  `ms:"sgid"`
+	ID                int `ms:"sgid"`
 	Name              string
 	Type              int
 	IconID            int
 	Saved             bool `ms:"savedb"`
 	SortID            int
 	NameMode          int
-	ModifyPower       int  `ms:"n_modifyp"`
-	MemberAddPower    int  `ms:"n_member_addp"`
-	MemberRemovePower int  `ms:"n_member_addp"`
+	ModifyPower       int `ms:"n_modifyp"`
+	MemberAddPower    int `ms:"n_member_addp"`
+	MemberRemovePower int `ms:"n_member_addp"`
 }
 
 // GroupList returns a list of available groups for the selected server.
@@ -420,12 +420,12 @@ type DetailedOnlineClient struct {
 	// Average bandwidth used for incoming data in the last second (Bytes/s)
 	ConnectionBandwidthReceivedLastSecondTotal int `ms:"connection_bandwidth_received_last_second_total"`
 	// Average bandwidth used for incoming data in the last minute (Bytes/s)
-	ConnectionBandwidthReceivedLastMinuteTotal int `ms:"connection_bandwidth_received_last_minute_total"`
-	ChannelGroupID                             int `ms:"client_channel_group_id"`
-	ChannelGroupInheritedChannelID             int `ms:"client_channel_group_inherited_channel_id"`
-	NeededServerqueryViewPower                 int `ms:"client_needed_serverquery_view_power"`
+	ConnectionBandwidthReceivedLastMinuteTotal int   `ms:"connection_bandwidth_received_last_minute_total"`
+	ChannelGroupID                             int   `ms:"client_channel_group_id"`
+	ChannelGroupInheritedChannelID             int   `ms:"client_channel_group_inherited_channel_id"`
+	NeededServerqueryViewPower                 int   `ms:"client_needed_serverquery_view_power"`
 	Servergroups                               []int `ms:"client_servergroups"`
-	TalkPower                                  int `ms:"client_talk_power"`
+	TalkPower                                  int   `ms:"client_talk_power"`
 	// How often the client has connected to the server.
 	Totalconnections int `ms:"client_totalconnections"`
 
