@@ -1,4 +1,4 @@
-# TeamSpeak 3 [![Go Report Card](https://goreportcard.com/badge/github.com/multiplay/go-ts3)](https://goreportcard.com/report/github.com/multiplay/go-ts3) [![License](https://img.shields.io/badge/license-BSD-blue.svg)](https://github.com/multiplay/go-ts3/blob/master/LICENSE) [![GoDoc](https://godoc.org/github.com/multiplay/go-ts3?status.svg)](https://godoc.org/github.com/multiplay/go-ts3) [![Build Status](https://travis-ci.org/multiplay/go-ts3.svg?branch=master)](https://travis-ci.org/multiplay/go-ts3)
+# TeamSpeak 3 [![Go Report Card](https://goreportcard.com/badge/github.com/irgendwr/go-ts3)](https://goreportcard.com/report/github.com/irgendwr/go-ts3) [![License](https://img.shields.io/badge/license-BSD-blue.svg)](https://github.com/irgendwr/go-ts3/blob/master/LICENSE) [![GoDoc](https://godoc.org/github.com/irgendwr/go-ts3?status.svg)](https://godoc.org/github.com/irgendwr/go-ts3) [![Build Status](https://travis-ci.org/irgendwr/go-ts3.svg?branch=master)](https://travis-ci.org/irgendwr/go-ts3)
 
 go-ts3 is a [Go](http://golang.org/) client for the [TeamSpeak 3 ServerQuery Protocol](http://media.teamspeak.com/ts3_literature/TeamSpeak%203%20Server%20Query%20Manual.pdf).
 
@@ -9,7 +9,7 @@ Features
 Installation
 ------------
 ```sh
-go get -u github.com/multiplay/go-ts3
+go get -u github.com/irgendwr/go-ts3
 ```
 
 Examples
@@ -22,7 +22,7 @@ package main
 import (
 	"log"
 
-        "github.com/multiplay/go-ts3"
+        "github.com/irgendwr/go-ts3"
 )
 
 func main() {
@@ -46,7 +46,7 @@ func main() {
 
 Documentation
 -------------
-- [GoDoc API Reference](http://godoc.org/github.com/multiplay/go-ts3).
+- [GoDoc API Reference](http://godoc.org/github.com/irgendwr/go-ts3).
 
 License
 -------

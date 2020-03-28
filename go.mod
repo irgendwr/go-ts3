@@ -1,4 +1,4 @@
-module github.com/multiplay/go-ts3
+module github.com/irgendwr/go-ts3
 
 go 1.13
 
